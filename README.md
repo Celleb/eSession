@@ -8,6 +8,7 @@ Sets up express-session using redis (connect-redis)
          npm install expression-js
 
 ### Example
+
 ```javascript
 'use strict'
 let express = require('express');
@@ -15,7 +16,6 @@ let app = express();
 let session = require('../lib/session');
 let bodyParser = require('body-parser'); //body parser and json handler
 let multer = require('multer');
-/* set response header */
 session.initialize(app);
 app.get('/', (req, res, next) => {
     if (req.session && req.session.data) {
