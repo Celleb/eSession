@@ -1,5 +1,5 @@
 {
-    "name": "expression",
+    "name": "celleb/expression",
     "version": "1.0.0",
     "description": "Sets up a nodejs session using express-session",
     "main": "index.js",
