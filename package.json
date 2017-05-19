@@ -1,0 +1,24 @@
+{
+    "name": "expression",
+    "version": "1.0.0",
+    "description": "Session manager using express session",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Celleb/expression.git"
+    },
+    "keywords": [
+        "Session",
+        "manager",
+        "Nodejs"
+    ],
+    "author": "Jonas Tomanga",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Celleb/expression/issues"
+    },
+    "homepage": "https://github.com/Celleb/expression#readme"
+}
