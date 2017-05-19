@@ -9,28 +9,28 @@ Sets up express-session using redis (connect-redis)
 
 ### Example
 ```javascript
-    'use strict'
-    let express = require('express');
-    let app = express();
-    let session = require('../lib/session');
-    let bodyParser = require('body-parser'); //body parser and json handler
-    let multer = require('multer');
-    /* set response header */
-    session.initialize(app);
-    app.get('/', (req, res, next) => {
-        if (req.session && req.session.data) {
-            res.json(req.session.data);
-        } else {
-            req.session.data = {
-                session: 'Good one'
-            }
-            res.json({ message: 'Session started' });
+'use strict'
+let express = require('express');
+let app = express();
+let session = require('../lib/session');
+let bodyParser = require('body-parser'); //body parser and json handler
+let multer = require('multer');
+/* set response header */
+session.initialize(app);
+app.get('/', (req, res, next) => {
+    if (req.session && req.session.data) {
+        res.json(req.session.data);
+    } else {
+        req.session.data = {
+            session: 'Good one'
         }
-    });
-    app.use(bodyParser.urlencoded({
-            extended: true
-        }))
-        .use(bodyParser.json());
-    app.listen(3010, function() {
-        console.info('running at 3010');
-    });
+        res.json({ message: 'Session started' });
+    }
+});
+app.use(bodyParser.urlencoded({
+        extended: true
+    }))
+    .use(bodyParser.json());
+app.listen(3010, function() {
+    console.info('running at 3010');
+});
