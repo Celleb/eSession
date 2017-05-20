@@ -5,5 +5,5 @@
  * @copyright (c) 2017 Jonas Tomanga 
  * All rights reserved 
  */
-session = './lib/session.js';
+session = require('./lib/session.js');
 module.exports = session;
