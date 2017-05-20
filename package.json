@@ -1,6 +1,6 @@
 {
     "name": "expression-js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Sets up a nodejs session using express-session",
     "main": "index.js",
     "scripts": {
